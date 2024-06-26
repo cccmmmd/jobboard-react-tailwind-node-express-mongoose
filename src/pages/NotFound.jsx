@@ -10,7 +10,7 @@ const NotFound = () => {
       <Link
         to="/"
         className="text-white bg-teal-700 hover:bg-teal-900 rounded-md px-3 py-2 mt-4"
-        >回去
+        >回首頁
         </Link>
     </section>
 

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FaMapMarker } from "react-icons/fa"
 import { Link } from "react-router-dom";
 
-const Job = ({ j }) => {
+const Job = ({ j, isHomePage = false }) => {
 	const [showDescription, setshowDescription] = useState(false);
 
 	let des = j.description;
@@ -27,7 +27,7 @@ const Job = ({ j }) => {
 					{showDescription ? "less" : "more"}
 				</button>
 
-				<h3 className="text-teal-500 mb-2">{`${j.salary} / Year`}</h3>
+				<h3 className="text-teal-500 mb-2">{`${j.salary} / 年`}</h3>
 
 				<div className="border border-gray-100 mb-5"></div>
 
@@ -37,10 +37,10 @@ const Job = ({ j }) => {
 						{j.location}
 					</div>
 					<Link
-						to="job"
+						to={isHomePage? `/jobs/${j.id}`:j.id}
 						className="h-[36px] bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-lg text-center text-sm"
 					>
-						Read More
+						瞭解更多
 					</Link>
 				</div>
 			</div>

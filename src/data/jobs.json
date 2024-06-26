@@ -1,116 +1,144 @@
 {
-  "jobs":[
-  {
-    "id": "3",
-    "title": "React.js Dev",
-    "type": "Full-Time",
-    "location": "Brooklyn, NY",
-    "description": "Are you passionate about front-end development? Join our team in vibrant Brooklyn, NY, and work on exciting projects that make a difference. We offer competitive compensation and a collaborative work environment where your ideas are valued.",
-    "salary": "$70K - $80K",
-    "company": {
-      "name": "Dolor Cloud",
-      "description": "Dolor Cloud is a leading technology company specializing in digital solutions for businesses of all sizes. With a focus on innovation and customer satisfaction, we are committed to delivering cutting-edge products and services.",
-      "contactEmail": "contact@dolorsitamet.com",
-      "contactPhone": "555-555-5555"
+  "jobs": [
+    {
+      "id": "1",
+      "title": "軟體工程師",
+      "type": "Full-Time",
+      "location": "台北市",
+      "description": "負責開發和維護公司內部系統，並協助進行系統升級。",
+      "salary": "NT$70,000",
+      "company": {
+        "name": "科技新創有限公司",
+        "description": "專注於開發創新軟體解決方案的公司。",
+        "contactEmail": "hr@techstartup.com",
+        "contactPhone": "02-1234-5678"
+      }
+    },
+    {
+      "id": "2",
+      "title": "行銷專員",
+      "type": "Full-Time",
+      "location": "新北市",
+      "description": "負責策劃和執行行銷活動，提升品牌知名度。",
+      "salary": "NT$50,000",
+      "company": {
+        "name": "創意行銷股份有限公司",
+        "description": "提供全方位行銷服務的專業公司。",
+        "contactEmail": "info@creativemarketing.com",
+        "contactPhone": "02-2345-6789"
+      }
+    },
+    {
+      "id": "3",
+      "title": "產品經理",
+      "type": "Full-Time",
+      "location": "台中市",
+      "description": "負責產品的規劃與管理，確保產品的市場競爭力。",
+      "salary": "NT$90,000",
+      "company": {
+        "name": "大同科技股份有限公司",
+        "description": "提供高科技產品與服務的領導廠商。",
+        "contactEmail": "contact@tatungtech.com",
+        "contactPhone": "04-5678-1234"
+      }
+    },
+    {
+      "id": "4",
+      "title": "客服專員",
+      "type": "Full-Time",
+      "location": "高雄市",
+      "description": "負責處理客戶查詢與投訴，並提供解決方案。",
+      "salary": "NT$45,000",
+      "company": {
+        "name": "安心服務有限公司",
+        "description": "專注於提供優質客服體驗的公司。",
+        "contactEmail": "service@safecompany.com",
+        "contactPhone": "07-8765-4321"
+      }
+    },
+    {
+      "id": "5",
+      "title": "資料科學家",
+      "type": "Full-Time",
+      "location": "台北市",
+      "description": "負責數據分析與模型建置，支持業務決策。",
+      "salary": "NT$100,000",
+      "company": {
+        "name": "數據科技股份有限公司",
+        "description": "專注於大數據與人工智慧解決方案的公司。",
+        "contactEmail": "jobs@datasciencetech.com",
+        "contactPhone": "02-3456-7890"
+      }
+    },
+    {
+      "id": "6",
+      "title": "平面設計師",
+      "type": "Full-Time",
+      "location": "台南市",
+      "description": "負責公司廣告及宣傳品的設計與製作。",
+      "salary": "NT$55,000",
+      "company": {
+        "name": "設計之星有限公司",
+        "description": "專業設計服務公司，涵蓋各類設計需求。",
+        "contactEmail": "design@stardesign.com",
+        "contactPhone": "06-1234-5678"
+      }
+    },
+    {
+      "id": "7",
+      "title": "財務分析師",
+      "type": "Full-Time",
+      "location": "台北市",
+      "description": "負責公司財務數據的分析與報告製作。",
+      "salary": "NT$85,000",
+      "company": {
+        "name": "財務管理顧問有限公司",
+        "description": "提供專業財務管理與諮詢服務的公司。",
+        "contactEmail": "finance@financialadvisors.com",
+        "contactPhone": "02-5678-1234"
+      }
+    },
+    {
+      "id": "8",
+      "title": "營運經理",
+      "type": "Full-Time",
+      "location": "新竹市",
+      "description": "負責公司營運管理，提升運營效率與業績。",
+      "salary": "NT$95,000",
+      "company": {
+        "name": "科技營運股份有限公司",
+        "description": "專業科技營運與管理公司。",
+        "contactEmail": "hr@techoperations.com",
+        "contactPhone": "03-1234-5678"
+      }
+    },
+    {
+      "id": "9",
+      "title": "人力資源專員",
+      "type": "Full-Time",
+      "location": "台中市",
+      "description": "負責人力資源相關事務，包括招募與員工關係管理。",
+      "salary": "NT$60,000",
+      "company": {
+        "name": "人力資源管理有限公司",
+        "description": "專業的人力資源服務提供商。",
+        "contactEmail": "hr@hrmanagement.com",
+        "contactPhone": "04-2345-6789"
+      }
+    },
+    {
+      "id": "10",
+      "title": "業務代表",
+      "type": "Full-Time",
+      "location": "台北市",
+      "description": "負責開發新客戶並維護現有客戶關係，推動銷售業績。",
+      "salary": "NT$70,000",
+      "company": {
+        "name": "銷售達人股份有限公司",
+        "description": "專注於提供高效銷售解決方案的公司。",
+        "contactEmail": "sales@salemaster.com",
+        "contactPhone": "02-8765-4321"
+      }
     }
-  },
-  {
-    "id": "4",
-    "title": "React Front-End Developer",
-    "type": "Part-Time",
-    "description": "Join our team as a Part-Time Front-End Developer in beautiful Pheonix, AZ. We are looking for a self-motivated individual with a passion for creating engaging user experiences. This position offers flexible hours and the opportunity to work remotely.",
-    "location": "Pheonix, AZ",
-    "salary": "$60K - $70K",
-    "company": {
-      "name": "Alpha Elite",
-      "description": "Alpha Elite is a dynamic startup specializing in digital marketing and web development. We are committed to fostering a diverse and inclusive workplace where creativity and innovation thrive.",
-      "contactEmail": "contact@adipisicingelit.com",
-      "contactPhone": "555-555-5555"
-    }
-  },
-  {
-    "id": "1",
-    "title": "Senior React Developer",
-    "type": "Full-Time",
-    "description": "We are seeking a talented Front-End Developer to join our team in Boston, MA. The ideal candidate will have strong skills in HTML, CSS, and JavaScript, with experience working with modern JavaScript frameworks such as React or Angular.",
-    "location": "Boston, MA",
-    "salary": "$70K - $80K",
-    "company": {
-      "name": "NewTek Solutions",
-      "description": "NewTek Solutions is a leading technology company specializing in web development and digital solutions. We pride ourselves on delivering high-quality products and services to our clients while fostering a collaborative and innovative work environment.",
-      "contactEmail": "contact@teksolutions.com",
-      "contactPhone": "555-555-5555"
-    }
-  },
-  {
-    "id": "2",
-    "title": "Front-End Engineer (React & Redux)",
-    "type": "Full-Time",
-    "location": "Miami, FL",
-    "description": "Join our team as a Front-End Developer in sunny Miami, FL. We are looking for a motivated individual with a passion for crafting beautiful and responsive web applications. Experience with UI/UX design principles and a strong attention to detail are highly desirable.",
-    "salary": "$70K - $80K",
-    "company": {
-      "name": "Veneer Solutions",
-      "description": "Veneer Solutions is a creative agency specializing in digital design and development. Our team is dedicated to pushing the boundaries of creativity and innovation to deliver exceptional results for our clients.",
-      "contactEmail": "contact@loremipsum.com",
-      "contactPhone": "555-555-5555"
-    }
-  },
-  {
-    "id": "3",
-    "title": "React.js Dev",
-    "type": "Full-Time",
-    "location": "Brooklyn, NY",
-    "description": "Are you passionate about front-end development? Join our team in vibrant Brooklyn, NY, and work on exciting projects that make a difference. We offer competitive compensation and a collaborative work environment where your ideas are valued.",
-    "salary": "$70K - $80K",
-    "company": {
-      "name": "Dolor Cloud",
-      "description": "Dolor Cloud is a leading technology company specializing in digital solutions for businesses of all sizes. With a focus on innovation and customer satisfaction, we are committed to delivering cutting-edge products and services.",
-      "contactEmail": "contact@dolorsitamet.com",
-      "contactPhone": "555-555-5555"
-    }
-  },
-  {
-    "id": "4",
-    "title": "React Front-End Developer",
-    "type": "Part-Time",
-    "description": "Join our team as a Part-Time Front-End Developer in beautiful Pheonix, AZ. We are looking for a self-motivated individual with a passion for creating engaging user experiences. This position offers flexible hours and the opportunity to work remotely.",
-    "location": "Pheonix, AZ",
-    "salary": "$60K - $70K",
-    "company": {
-      "name": "Alpha Elite",
-      "description": "Alpha Elite is a dynamic startup specializing in digital marketing and web development. We are committed to fostering a diverse and inclusive workplace where creativity and innovation thrive.",
-      "contactEmail": "contact@adipisicingelit.com",
-      "contactPhone": "555-555-5555"
-    }
-  },
-  {
-    "id": "5",
-    "title": "Full Stack React Developer",
-    "type": "Full-Time",
-    "description": "Exciting opportunity for a Full-Time Front-End Developer in bustling Atlanta, GA. We are seeking a talented individual with a passion for building elegant and scalable web applications. Join our team and make an impact!",
-    "location": "Atlanta, GA",
-    "salary": "$90K - $100K",
-    "company": {
-      "name": "Browning Technologies",
-      "description": "Browning Technologies is a rapidly growing technology company specializing in e-commerce solutions. We offer a dynamic and collaborative work environment where employees are encouraged to think creatively and innovate.",
-      "contactEmail": "contact@consecteturadipisicing.com",
-      "contactPhone": "555-555-5555"
-    }
-  },
-  {
-    "id": "6",
-    "title": "React Native Developer",
-    "type": "Full-Time",
-    "description": "Join our team as a Front-End Developer in beautiful Portland, OR. We are looking for a skilled and enthusiastic individual to help us create innovative web solutions. Competitive salary and great benefits package available.",
-    "location": "Portland, OR",
-    "salary": "$100K - $110K",
-    "company": {
-      "name": "Port Solutions INC",
-      "description": "Port Solutions is a leading technology company specializing in software development and digital marketing. We are committed to providing our clients with cutting-edge solutions and our employees with a supportive and rewarding work environment.",
-      "contactEmail": "contact@ipsumlorem.com",
-      "contactPhone": "555-555-5555"
-    }
-  }
   ]
 }
