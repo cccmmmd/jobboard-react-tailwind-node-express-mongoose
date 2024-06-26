@@ -7,7 +7,7 @@ const Homecard = () => {
 			<div className="container-xl lg:container m-auto">
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 rounded-lg">
 					<Card>
-						<h2 className="text-2xl font-bold">給開發者</h2>
+						<h2 className="text-2xl font-bold">給求職者</h2>
 						<p className="mt-2 mb-4">你的工作在等你，開始找吧！</p>
 						<Link
 							to="/jobs"

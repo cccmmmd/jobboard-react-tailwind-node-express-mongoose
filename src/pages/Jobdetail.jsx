@@ -1,8 +1,9 @@
 import { useParams, useLoaderData, Link, useNavigate } from "react-router-dom";
 import Spinner from "../components/Spinner";
 import { FaArrowLeft, FaMapMarker } from "react-icons/fa";
+import { toast } from 'react-toastify';
 
-const Job = ({ deleteJob }) => {
+const Jobdetail = ({ deleteJob }) => {
 	const { id } = useParams();
 	const job = useLoaderData();
 	const navigate = useNavigate()
@@ -11,6 +12,8 @@ const Job = ({ deleteJob }) => {
 
 		if (!confirm) return;
 		deleteJob(jobID);
+		
+		toast.success('工作刪除成功！');
 		navigate('/jobs')
 	};
 	return (
@@ -67,10 +70,10 @@ const Job = ({ deleteJob }) => {
 									公司資訊
 								</h3>
 
-								<h2 className="text-2xl">{job.company.name}</h2>
+								<h2 className="text-2xl">{job.c_name}</h2>
 
 								<p className="my-2">
-									{job.company.description}
+									{job.c_description}
 								</p>
 
 								<hr className="my-4" />
@@ -78,14 +81,14 @@ const Job = ({ deleteJob }) => {
 								<h3 className="text-xl">聯絡 Email:</h3>
 
 								<p className="my-2 bg-teal-100 p-2 font-bold">
-									{job.company.contactEmail}
+									{job.c_contactEmail}
 								</p>
 
 								<h3 className="text-xl">聯絡電話:</h3>
 
 								<p className="my-2 bg-teal-100 p-2 font-bold">
 									{" "}
-									{job.company.contactPhone}
+									{job.c_contactPhone}
 								</p>
 							</div>
 
@@ -119,4 +122,4 @@ const jobLoader = async ({ params }) => {
 	const data = await res.json();
 	return data;
 };
-export { Job as default, jobLoader };
+export { Jobdetail as default, jobLoader };

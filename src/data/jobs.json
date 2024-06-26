@@ -7,26 +7,22 @@
       "location": "台北市",
       "description": "負責開發和維護公司內部系統，並協助進行系統升級。",
       "salary": "NT$70,000",
-      "company": {
-        "name": "科技新創有限公司",
-        "description": "專注於開發創新軟體解決方案的公司。",
-        "contactEmail": "hr@techstartup.com",
-        "contactPhone": "02-1234-5678"
-      }
+      "c_name": "科技新創有限公司",
+      "c_description": "專注於開發創新軟體解決方案的公司。",
+      "c_contactEmail": "hr@techstartup.com",
+      "c_contactPhone": "02-1234-5678"
     },
     {
       "id": "2",
-      "title": "行銷專員",
-      "type": "Full-Time",
+      "title": "行銷專員1",
+      "type": "Part-Time",
       "location": "新北市",
       "description": "負責策劃和執行行銷活動，提升品牌知名度。",
       "salary": "NT$50,000",
-      "company": {
-        "name": "創意行銷股份有限公司",
-        "description": "提供全方位行銷服務的專業公司。",
-        "contactEmail": "info@creativemarketing.com",
-        "contactPhone": "02-2345-6789"
-      }
+      "c_name": "創意行銷股份有限公司",
+      "c_description": "提供全方位行銷服務的專業公司。",
+      "c_contactEmail": "info@creativemarketing.com",
+      "c_contactPhone": "02-2345-6789"
     },
     {
       "id": "3",
@@ -35,12 +31,10 @@
       "location": "台中市",
       "description": "負責產品的規劃與管理，確保產品的市場競爭力。",
       "salary": "NT$90,000",
-      "company": {
-        "name": "大同科技股份有限公司",
-        "description": "提供高科技產品與服務的領導廠商。",
-        "contactEmail": "contact@tatungtech.com",
-        "contactPhone": "04-5678-1234"
-      }
+      "c_name": "大同科技股份有限公司",
+      "c_description": "提供高科技產品與服務的領導廠商。",
+      "c_contactEmail": "contact@tatungtech.com",
+      "c_contactPhone": "04-5678-1234"
     },
     {
       "id": "4",
@@ -49,12 +43,10 @@
       "location": "高雄市",
       "description": "負責處理客戶查詢與投訴，並提供解決方案。",
       "salary": "NT$45,000",
-      "company": {
-        "name": "安心服務有限公司",
-        "description": "專注於提供優質客服體驗的公司。",
-        "contactEmail": "service@safecompany.com",
-        "contactPhone": "07-8765-4321"
-      }
+      "c_name": "安心服務有限公司",
+      "c_description": "專注於提供優質客服體驗的公司。",
+      "c_contactEmail": "service@safecompany.com",
+      "c_contactPhone": "07-8765-4321"
     },
     {
       "id": "5",
@@ -63,12 +55,10 @@
       "location": "台北市",
       "description": "負責數據分析與模型建置，支持業務決策。",
       "salary": "NT$100,000",
-      "company": {
-        "name": "數據科技股份有限公司",
-        "description": "專注於大數據與人工智慧解決方案的公司。",
-        "contactEmail": "jobs@datasciencetech.com",
-        "contactPhone": "02-3456-7890"
-      }
+      "c_name": "數據科技股份有限公司",
+      "c_description": "專注於大數據與人工智慧解決方案的公司。",
+      "c_contactEmail": "jobs@datasciencetech.com",
+      "c_contactPhone": "02-3456-7890"
     },
     {
       "id": "6",
@@ -77,12 +67,10 @@
       "location": "台南市",
       "description": "負責公司廣告及宣傳品的設計與製作。",
       "salary": "NT$55,000",
-      "company": {
-        "name": "設計之星有限公司",
-        "description": "專業設計服務公司，涵蓋各類設計需求。",
-        "contactEmail": "design@stardesign.com",
-        "contactPhone": "06-1234-5678"
-      }
+      "c_name": "設計之星有限公司",
+      "c_description": "專業設計服務公司，涵蓋各類設計需求。",
+      "c_contactEmail": "design@stardesign.com",
+      "c_contactPhone": "06-1234-5678"
     },
     {
       "id": "7",
@@ -91,12 +79,10 @@
       "location": "台北市",
       "description": "負責公司財務數據的分析與報告製作。",
       "salary": "NT$85,000",
-      "company": {
-        "name": "財務管理顧問有限公司",
-        "description": "提供專業財務管理與諮詢服務的公司。",
-        "contactEmail": "finance@financialadvisors.com",
-        "contactPhone": "02-5678-1234"
-      }
+      "c_name": "財務管理顧問有限公司",
+      "c_description": "提供專業財務管理與諮詢服務的公司。",
+      "c_contactEmail": "finance@financialadvisors.com",
+      "c_contactPhone": "02-5678-1234"
     },
     {
       "id": "8",
@@ -105,12 +91,10 @@
       "location": "新竹市",
       "description": "負責公司營運管理，提升運營效率與業績。",
       "salary": "NT$95,000",
-      "company": {
-        "name": "科技營運股份有限公司",
-        "description": "專業科技營運與管理公司。",
-        "contactEmail": "hr@techoperations.com",
-        "contactPhone": "03-1234-5678"
-      }
+      "c_name": "科技營運股份有限公司",
+      "c_description": "專業科技營運與管理公司。",
+      "c_contactEmail": "hr@techoperations.com",
+      "c_contactPhone": "03-1234-5678"
     },
     {
       "id": "9",
@@ -119,12 +103,10 @@
       "location": "台中市",
       "description": "負責人力資源相關事務，包括招募與員工關係管理。",
       "salary": "NT$60,000",
-      "company": {
-        "name": "人力資源管理有限公司",
-        "description": "專業的人力資源服務提供商。",
-        "contactEmail": "hr@hrmanagement.com",
-        "contactPhone": "04-2345-6789"
-      }
+      "c_name": "人力資源管理有限公司",
+      "c_description": "專業的人力資源服務提供商。",
+      "c_contactEmail": "hr@hrmanagement.com",
+      "c_contactPhone": "04-2345-6789"
     },
     {
       "id": "10",
@@ -133,12 +115,22 @@
       "location": "台北市",
       "description": "負責開發新客戶並維護現有客戶關係，推動銷售業績。",
       "salary": "NT$70,000",
-      "company": {
-        "name": "銷售達人股份有限公司",
-        "description": "專注於提供高效銷售解決方案的公司。",
-        "contactEmail": "sales@salemaster.com",
-        "contactPhone": "02-8765-4321"
-      }
+      "c_name": "銷售達人股份有限公司",
+      "c_description": "專注於提供高效銷售解決方案的公司。",
+      "c_contactEmail": "sales@salemaster.com",
+      "c_contactPhone": "02-8765-4321"
+    },
+    {
+      "id": "38e9",
+      "title": "kk",
+      "type": "Part-Time",
+      "location": "kk",
+      "description": "mmllllllll",
+      "salary": "$20000",
+      "c_name": "kk",
+      "c_description": "kkppp",
+      "c_contactEmail": "ff@w.dd",
+      "c_contactPhone": "d"
     }
   ]
 }

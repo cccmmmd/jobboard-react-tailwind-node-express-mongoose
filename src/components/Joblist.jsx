@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import jobs from "../data/jobs.json";
 import Job from "./Jobcard";
 import Spinner from "./Spinner";
 
@@ -16,7 +15,7 @@ const Joblist = ({ isHomePage = false }) => {
 					(res) => res.json()
 				);
 
-				setjobs(data);
+				setjobs(data.sort((a,b) => { return a<b? 1: -1}));
 			} catch (error) {
 				console.log("Error fetching jobs", error);
 			} finally {

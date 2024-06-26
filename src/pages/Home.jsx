@@ -6,7 +6,7 @@ import ViewAllJobs from "../components/ViewAllJobs";
 const Home = () => {
 	return (
 		<>
-			<Hero title="成為一名開發者" />
+			<Hero title="成為理想的自己" />
 			<Homecard />
 			<Joblist isHomePage={true}/>
 			<ViewAllJobs />

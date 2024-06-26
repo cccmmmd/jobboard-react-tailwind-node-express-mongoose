@@ -8,8 +8,9 @@ import MainLayout from "./layouts/MainLayout";
 import Home from "./pages/Home";
 import Jobs from "./pages/Jobs";
 import NotFound from "./pages/NotFound";
-import Job, { jobLoader } from "./pages/Jobdetail";
+import Jobdetail, { jobLoader } from "./pages/Jobdetail";
 import AddJob from "./pages/AddJob";
+import EditJob from './pages/EditJob'
 
 const App = () => {
 
@@ -32,6 +33,17 @@ const App = () => {
 			console.log(res.error)
 		}
 	}
+
+	const editJob = async(updateJob) => {
+		const res = await fetch(`/api/jobs/${updateJob.id}`, {
+			method: 'PUT',
+			body: JSON.stringify(updateJob),
+			headers: {'Content-Type': 'appliction/json',},
+		})
+		if(res.error){
+			console.log(res.error)
+		}
+	}
 	
 	
 	const router = createBrowserRouter(
@@ -39,7 +51,8 @@ const App = () => {
 			<Route path="/" element={<MainLayout />}>
 				<Route index element={<Home />} />
 				<Route path="/jobs" element={<Jobs />} />
-				<Route path="/jobs/:id" element={<Job deleteJob={deleteJob} />}  loader={jobLoader}/>
+				<Route path="/jobs/:id" element={<Jobdetail deleteJob={deleteJob} />}  loader={jobLoader}/>
+				<Route path="/edit-job/:id" element={<EditJob updateJob={editJob}/>}  loader={jobLoader}/>
 				<Route path="/add-job" element={<AddJob addJobFunc={addJob}/>} />
 				<Route path="*" element={<NotFound />} />
 			</Route>

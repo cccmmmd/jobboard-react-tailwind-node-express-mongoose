@@ -1,25 +1,26 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useParams, useLoaderData,  useNavigate } from "react-router-dom";
 import { toast } from 'react-toastify';
 
-const AddJob = ({addJobFunc}) => {
+const EditJob = ({updateJob}) => {
+	const job = useLoaderData();
 	const [formData, setformData] = useState({
-		title: "",
-		type: "Full-Time",
-		location: "",
-		description: "",
-		salary: "$20000",
-		c_name: "",
-		c_description: "",
-		c_contactEmail: "",
-		c_contactPhone: "",
+		id: job.id,
+		title: job.title,
+		type: job.title,
+		location: job.location,
+		description: job.description,
+		salary: job.salary,
+		c_name: job.c_name,
+		c_description: job.c_description,
+		c_contactEmail: job.c_contactEmail,
+		c_contactPhone: job.c_contactPhone,
 	});
 	const navigate = useNavigate();
 	const submitForm = (e) => {
 		e.preventDefault();
-		addJobFunc(formData);
-        
-        toast.success('工作新增成功！');
+        updateJob(formData);
+        toast.success('工作更新成功！');
 		navigate("/jobs");
 	};
 	const handleChange = (e) => {
@@ -31,7 +32,7 @@ const AddJob = ({addJobFunc}) => {
 				<div className="bg-white px-6 py-8 mb-4 shadow-md rounded-md border m-4 md:m-0">
 					<form onSubmit={submitForm}>
 						<h2 className="text-3xl text-center font-semibold mb-6">
-							新增工作
+							編輯工作
 						</h2>
 
 						<div className="mb-4">
@@ -47,6 +48,7 @@ const AddJob = ({addJobFunc}) => {
 								className="border rounded w-full py-2 px-3"
 								required
 								onChange={handleChange}
+								value={formData.type}
 							>
 								<option value="Full-Time">Full-Time</option>
 								<option value="Part-Time">Part-Time</option>
@@ -66,6 +68,7 @@ const AddJob = ({addJobFunc}) => {
 								className="border rounded w-full py-2 px-3 mb-2"
 								placeholder="eg. Beautiful Apartment In Miami"
 								required
+								value={formData.title}
 								onChange={handleChange}
 							/>
 						</div>
@@ -83,6 +86,7 @@ const AddJob = ({addJobFunc}) => {
 								rows="4"
 								placeholder="Add any job duties, expectations, requirements, etc"
 								onChange={handleChange}
+								value={formData.description}
 							></textarea>
 						</div>
 
@@ -99,27 +103,28 @@ const AddJob = ({addJobFunc}) => {
 								className="border rounded w-full py-2 px-3"
 								required
 								onChange={handleChange}
+								value={formData.salary}
 							>
-								<option value="$20000">NT$20,000</option>
-								<option value="$25000">NT$25,000</option>
-								<option value="$30000">NT$30,000</option>
-								<option value="$35000">NT$35,000</option>
-								<option value="$40000">NT$40,000</option>
-								<option value="$45000">NT$45,000</option>
-								<option value="$50000">NT$50,000</option>
-								<option value="$55000">NT$55,000</option>
-								<option value="$60000">NT$60,000</option>
-								<option value="$65000">NT$65,000</option>
-								<option value="$70000">NT$70,000</option>
-								<option value="$75000">NT$75,000</option>
-								<option value="$80000">NT$80,000</option>
-								<option value="$85000">NT$85,000</option>
-								<option value="$90000">NT$90,000</option>
-								<option value="$95000">NT$95,000</option>
-								<option value="$100000">NT$100,000</option>
-								<option value="$105000">NT$105,000</option>
-								<option value="$110000">NT$110,000</option>
-								<option value="$115000">NT$115,000</option>
+								<option value="NT$20,000">NT$20,000</option>
+								<option value="NT$25,000">NT$25,000</option>
+								<option value="NT$30,000">NT$30,000</option>
+								<option value="NT$35,000">NT$35,000</option>
+								<option value="NT$40,000">NT$40,000</option>
+								<option value="NT$45,000">NT$45,000</option>
+								<option value="NT$50,000">NT$50,000</option>
+								<option value="NT$55,000">NT$55,000</option>
+								<option value="NT$60,000">NT$60,000</option>
+								<option value="NT$65,000">NT$65,000</option>
+								<option value="NT$70,000">NT$70,000</option>
+								<option value="NT$75,000">NT$75,000</option>
+								<option value="NT$80,000">NT$80,000</option>
+								<option value="NT$85,000">NT$85,000</option>
+								<option value="NT$90,000">NT$90,000</option>
+								<option value="NT$95,000">NT$95,000</option>
+								<option value="NT$100,000">NT$100,000</option>
+								<option value="NT$105,000">NT$105,000</option>
+								<option value="NT$110,000">NT$110,000</option>
+								<option value="NT$115,000">NT$115,000</option>
 							</select>
 						</div>
 
@@ -135,6 +140,7 @@ const AddJob = ({addJobFunc}) => {
 								placeholder="Company Location"
 								required
 								onChange={handleChange}
+								value={formData.location}
 							/>
 						</div>
 
@@ -154,6 +160,7 @@ const AddJob = ({addJobFunc}) => {
 								className="border rounded w-full py-2 px-3"
 								placeholder="Company Name"
 								onChange={handleChange}
+								value={formData.c_name}
 							/>
 						</div>
 
@@ -171,6 +178,7 @@ const AddJob = ({addJobFunc}) => {
 								rows="4"
 								placeholder="What does your company do?"
 								onChange={handleChange}
+								value={formData.c_description}
 							></textarea>
 						</div>
 
@@ -189,6 +197,7 @@ const AddJob = ({addJobFunc}) => {
 								placeholder="Email address for applicants"
 								required
 								onChange={handleChange}
+								value={formData.c_contactEmail}
 							/>
 						</div>
 						<div className="mb-4">
@@ -205,6 +214,7 @@ const AddJob = ({addJobFunc}) => {
 								className="border rounded w-full py-2 px-3"
 								placeholder="Optional phone for applicants"
 								onChange={handleChange}
+								value={formData.c_contactPhone}
 							/>
 						</div>
 
@@ -223,4 +233,4 @@ const AddJob = ({addJobFunc}) => {
 	);
 };
 
-export default AddJob;
+export default EditJob;
