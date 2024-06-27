@@ -2,7 +2,7 @@ import 'dotenv/config'
 import mongoose from "mongoose";
 
 export default function connectDB() {
-  const url = process.env.DB;
+  const url = `mongodb+srv://${process.env.NAME}:${process.env.PASSWORD}@cluster0.djyudka.mongodb.net/Jobs?retryWrites=true&w=majority&appName=Cluster0`;
 
   try {
     mongoose.connect(url, {
