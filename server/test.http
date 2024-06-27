@@ -1,0 +1,44 @@
+@hostname = localhost
+@port = 3000
+@host = {{hostname}}:{{port}}
+
+//Get all
+#  GET http://{{host}}/api/jobs
+
+//Get one
+# GET http://{{host}}/api/jobs/1
+
+# //Create
+# POST http://{{host}}/api/jobs 
+# content-type: application/json
+
+# {
+#     "id": "DSF3",
+#     "title": "軟體工程師2",
+#     "type": "Remote",
+#     "location": "台東市",
+#     "description": "級。",
+#     "salary": "NT$70,000",
+#     "c_name": "創有限公司",
+#     "c_description": "sssss。",
+#     "c_contactEmail": "ss@fc.com",
+#     "c_contactPhone": "00000"
+# }
+
+//Update
+PATCH http://{{host}}/api/jobs/667d4eee945096561deec29f
+content-type: application/json
+
+{"_id":"667d4eee945096561deec29f",
+"title":"kk0000000",
+"type":"Full-Time",
+"location":"k",
+"description":"",
+"salary":"$20000",
+"c_name":"k",
+"c_description":"",
+"c_contactEmail":"ff@w.dd",
+    "c_contactPhone":""}
+# //Delete one
+# DELETE http://{{host}}/api/jobs/200
+
