@@ -5,9 +5,9 @@ import { toast } from 'react-toastify';
 const EditJob = ({updateJob}) => {
 	const job = useLoaderData();
 	const [formData, setformData] = useState({
-		id: job.id,
+		_id: job._id,
 		title: job.title,
-		type: job.title,
+		type: job.type,
 		location: job.location,
 		description: job.description,
 		salary: job.salary,

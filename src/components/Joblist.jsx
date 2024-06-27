@@ -8,7 +8,7 @@ const Joblist = ({ isHomePage = false }) => {
 	// const showJobs = isHomePage?jobs.slice(0, 3):jobs;
 
 	useEffect(() => {
-		const fetchurl = isHomePage? '/api/jobs?_limit=3': '/api/jobs'
+		const fetchurl = isHomePage? '/api/jobs?limit=3': '/api/jobs'
 		const fetchJobs = async () => {
 			try {
 				const data = await fetch(fetchurl).then(
@@ -34,7 +34,7 @@ const Joblist = ({ isHomePage = false }) => {
 						<Spinner loading={loading} />
 					) : (
 						<div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-							{jobs.map((j) => <Job key={j.id} j={j} isHomePage={isHomePage}/>)}
+							{jobs.map((j) => <Job key={j._id} j={j} isHomePage={isHomePage}/>)}
 						</div>
 					)}
 			</div>

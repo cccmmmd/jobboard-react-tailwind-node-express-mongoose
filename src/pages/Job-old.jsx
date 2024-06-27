@@ -8,7 +8,6 @@ const Job = () => {
 	const { id } = useParams();
 
 	useEffect(() => {
-        console.log(useParams.id)
 		const fetchJobs = async () => {
 			try {
 				const data = await fetch(`/api/jobs/${id}`).then((res) =>

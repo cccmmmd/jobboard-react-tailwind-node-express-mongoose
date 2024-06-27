@@ -18,7 +18,7 @@ const App = () => {
 		const res = await fetch('/api/jobs', {
 			method: 'POST',
 			body: JSON.stringify(newJob),
-			headers: {'Content-Type': 'appliction/json',},
+			headers: {'Content-Type': 'application/json;charset=utf-8'}
 		})
 		if(res.error){
 			console.log(res.error)
@@ -35,10 +35,11 @@ const App = () => {
 	}
 
 	const editJob = async(updateJob) => {
-		const res = await fetch(`/api/jobs/${updateJob.id}`, {
-			method: 'PUT',
+		console.log(JSON.stringify(updateJob))
+		const res = await fetch(`/api/jobs/${updateJob._id}`, {
+			method: 'PATCH',
 			body: JSON.stringify(updateJob),
-			headers: {'Content-Type': 'appliction/json',},
+			headers: {'Content-Type': 'application/json;charset=utf-8'}
 		})
 		if(res.error){
 			console.log(res.error)

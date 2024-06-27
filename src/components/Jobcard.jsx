@@ -9,7 +9,6 @@ const Job = ({ j, isHomePage = false }) => {
 
 	if (!showDescription) {
 		des = des.substring(0, 100) + "...";
-		console.log(des);
 	}
 	return (
 		<div className="bg-white rounded-xl shadow-md relative">
@@ -37,7 +36,7 @@ const Job = ({ j, isHomePage = false }) => {
 						{j.location}
 					</div>
 					<Link
-						to={isHomePage? `/jobs/${j.id}`:j.id}
+						to={isHomePage? `/jobs/${j._id}`:j._id}
 						className="h-[36px] bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-lg text-center text-sm"
 					>
 						瞭解更多

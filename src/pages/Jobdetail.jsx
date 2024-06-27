@@ -1,5 +1,4 @@
 import { useParams, useLoaderData, Link, useNavigate } from "react-router-dom";
-import Spinner from "../components/Spinner";
 import { FaArrowLeft, FaMapMarker } from "react-icons/fa";
 import { toast } from 'react-toastify';
 
@@ -97,13 +96,13 @@ const Jobdetail = ({ deleteJob }) => {
 									Manage Job
 								</h3>
 								<Link
-									to={`/edit-job/${job.id}`}
+									to={`/edit-job/${job._id}`}
 									className="bg-teal-500 hover:bg-teal-600 text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
 								>
 									編輯工作
 								</Link>
 								<button
-									onClick={() => onDelete(job.id)}
+									onClick={() => onDelete(job._id)}
 									className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
 								>
 									刪除工作
