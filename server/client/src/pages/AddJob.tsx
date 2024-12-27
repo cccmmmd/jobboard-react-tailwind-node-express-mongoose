@@ -81,7 +81,6 @@ const AddJob = ({addJobFunc}) => {
 								name="description"
 								className="border rounded w-full py-2 px-3"
 								rows="4"
-								placeholder="Add any job duties, expectations, requirements, etc"
 								onChange={handleChange}
 							></textarea>
 						</div>
@@ -132,7 +131,6 @@ const AddJob = ({addJobFunc}) => {
 								id="location"
 								name="location"
 								className="border rounded w-full py-2 px-3 mb-2"
-								placeholder="Company Location"
 								required
 								onChange={handleChange}
 							/>
@@ -152,7 +150,6 @@ const AddJob = ({addJobFunc}) => {
 								id="company"
 								name="c_name"
 								className="border rounded w-full py-2 px-3"
-								placeholder="Company Name"
 								onChange={handleChange}
 							/>
 						</div>
@@ -169,7 +166,6 @@ const AddJob = ({addJobFunc}) => {
 								name="c_description"
 								className="border rounded w-full py-2 px-3"
 								rows="4"
-								placeholder="What does your company do?"
 								onChange={handleChange}
 							></textarea>
 						</div>
@@ -186,7 +182,6 @@ const AddJob = ({addJobFunc}) => {
 								id="contact_email"
 								name="c_contactEmail"
 								className="border rounded w-full py-2 px-3"
-								placeholder="Email address for applicants"
 								required
 								onChange={handleChange}
 							/>
@@ -203,7 +198,6 @@ const AddJob = ({addJobFunc}) => {
 								id="contact_phone"
 								name="c_contactPhone"
 								className="border rounded w-full py-2 px-3"
-								placeholder="Optional phone for applicants"
 								onChange={handleChange}
 							/>
 						</div>

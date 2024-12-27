@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Job from "./Jobcard";
 import Spinner from "./Spinner";
 
-const Joblist = ({ isHomePage = false }) => {
+const Joblist = ({ isHomePage }) => {
 	const [jobs, setjobs] = useState([]);
 	const [loading, setloading] = useState(true);
 	// const showJobs = isHomePage?jobs.slice(0, 3):jobs;
